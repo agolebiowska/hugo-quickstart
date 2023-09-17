@@ -1,4 +1,4 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
+baseURL = 'http://teresawolska.netlify.app'
 languageCode = 'en-us'
 title = 'Teresa Wolska - Obrazy'
 
@@ -15,21 +15,17 @@ title = 'Teresa Wolska - Obrazy'
 
         # Enable Exif data in the gallery.
         # See https://gohugo.io/content-management/image-processing/#exif-data for how to filter tags.
-        enable_exif = true
+        enable_exif = false
 
 [caches]
     [caches.images]
-        dir    = ':cacheDir/hugo-quickstart'
+        dir    = ':cacheDir/teresawolska-portfolio'
         maxAge = "4320h"                   # 6 months.
 
 [imaging]
     resampleFilter = "CatmullRom"
     quality        = 71
     anchor         = "smart"
-    [imaging.exif]
-        disableDate    = false
-        disableLatLong = true
-        includeFields  = 'Artist|LensModel|FNumber|ExposureTime'
 
 [server]
     [[server.headers]]

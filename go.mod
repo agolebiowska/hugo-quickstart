@@ -1,4 +1,4 @@
-module github.com/agolebiowska/hugo-quickstart
+module github.com/agolebiowska/teresawolska-portfolio
 
 go 1.19
 
