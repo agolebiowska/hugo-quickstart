@@ -1,4 +1,4 @@
 ---
-title: The Gallery
+title: Teresa Wolska
 headless: true
 ---
