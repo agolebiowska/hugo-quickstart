@@ -1,11 +1,11 @@
 baseURL = 'http://teresawolska.netlify.app'
-languageCode = 'en-us'
+languageCode = 'pl-PL'
 title = 'Teresa Wolska - Obrazy'
 copyright = "© Teresa Wolska"
 disableKinds = ["taxonomy", "term"]
-defaultContentLanguage = "en"
+defaultContentLanguage = "pl"
 enableRobotsTXT = true
-timeZone = "Europe/Berlin"
+timeZone = "Europe/Warsaw"
 theme = "github.com/nicokaiser/hugo-theme-gallery"
 
 [params]
