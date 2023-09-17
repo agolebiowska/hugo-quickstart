@@ -1,0 +1,9 @@
+{{ if .Title }}
+  <div class="mx-auto mb-16 mt-9 max-w-screen-lg px-6 text-center">
+    <h1 class="text-3xl font-semibold tracking-tight md:text-4xl">
+      <a href="{{ site.Home.RelPermalink }}">
+        {{ partial "logo.html" . }}
+      </a>
+    </h1>
+  </div>
+{{ end }}

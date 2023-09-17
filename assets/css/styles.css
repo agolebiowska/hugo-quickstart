@@ -1,28 +1,36 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #101010;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
+@font-face {
+  font-family: "Inter var";
+  font-weight: 100 900;
+  font-display: auto;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("../fonts/Inter-roman.var.woff2") format("woff2");
 }
 
-.logo {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 2;
-  color: #fff;
-  text-shadow: 2px 2px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../jslibs/photoswipe/dist/photoswipe.css";
+@import "../jslibs/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css";
+@import "../jslibs/flickr-justified-gallery/dist/fjGallery.css";
+
+html.light {
+  color-scheme: light;
 }
 
-.gd-modal-loaded .logo {
-  display: none;
+[x-cloak] {
+  display: none !important;
 }
 
-.logo:hover {
-  cursor: pointer;
-  color: #ffe0c9;
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+img.lazyload:not([src]) {
+  visibility: hidden;
 }
