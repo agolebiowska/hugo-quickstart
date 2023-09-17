@@ -9,7 +9,7 @@ timeZone = "Europe/Berlin"
 theme = "github.com/nicokaiser/hugo-theme-gallery"
 
 [params]
-  title = ""
+  title = "Teresa Wolska - Obrazy"
   description = "Portfolio"
   defaultTheme = "light"
 
@@ -18,7 +18,7 @@ theme = "github.com/nicokaiser/hugo-theme-gallery"
 
 [outputs]
   page = ["HTML"]
-  home = ["HTML", "RSS"]
+  home = ["HTML"]
   section = ["HTML"]
 
 [imaging]
